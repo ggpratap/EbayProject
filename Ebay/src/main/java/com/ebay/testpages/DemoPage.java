@@ -11,9 +11,12 @@ import com.ebay.comlib.CommonReusableMethods;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
+import io.appium.java_client.touch.TapOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 
 public class DemoPage {
 
@@ -41,7 +44,7 @@ public class DemoPage {
 	public WebElement hamBurgerMenuSettingsOption;
 
 	@iOSFindBy(id = "menuitem_settings")
-	@AndroidFindBy(id = "Deals,double tap to activate")
+	@AndroidFindBy(accessibility = "Deals,double tap to activate")
 	public WebElement hamBurgerMenuDealsOption;
 
 
@@ -70,7 +73,7 @@ public class DemoPage {
 	public WebElement countryName;
 
 	@iOSFindBy(id = "more Trending deals")
-	@AndroidFindBy(id = "more Trending deals")
+	@AndroidFindBy(accessibility = "more Trending deals")
 	public WebElement moreTrendingDeals;
 
 	@iOSFindBy(id = "title")
@@ -78,7 +81,7 @@ public class DemoPage {
 	public WebElement pageTitle;
 
 	@iOSFindBy(id = "Search")
-	@AndroidFindBy(id = "Search")
+	@AndroidFindBy(accessibility = "Search")
 	public WebElement categorySearchIcon;
 
 	@iOSFindBy(id = "search_src_text")
@@ -87,7 +90,7 @@ public class DemoPage {
 
 
 	@iOSFindBy(id = "title")
-	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView")
+	@AndroidFindBy(xpath = "//android.widget.LinearLayout[2]/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.TextView")
 	public WebElement searchedCategoryFirstResult;
 
 	@iOSFindBy(id = "Categories,double tap to activate")
@@ -99,7 +102,7 @@ public class DemoPage {
 	public WebElement progressBar;
 
 	@iOSFindBy(id = "resultName")
-	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView")
+	@AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView")
 	public WebElement searchedCategoryFirstResultName;
 
 	@iOSFindBy(id = "Categories,double tap to activate")
@@ -107,25 +110,25 @@ public class DemoPage {
 	public WebElement hamburgerMenuHomeOption;
 
 	@iOSFindBy(id = "button_register")
-	@AndroidFindBy(accessibility = "button_register")
+	@AndroidFindBy(id = "button_register")
 	public WebElement registerButtonHomeScreen;
 
 
 	@iOSFindBy(id = "firstname")
-	@AndroidFindBy(accessibility = "firstname")
+	@AndroidFindBy(id = "firstname")
 	public WebElement registerScreenFirstNameTextbox;
 
 	@iOSFindBy(id = "firstname")
-	@AndroidFindBy(accessibility = "lastname")
+	@AndroidFindBy(id = "lastname")
 	public WebElement registerScreenLastNameTextbox;
 
 	@iOSFindBy(id = "firstname")
-	@AndroidFindBy(accessibility = "email")
+	@AndroidFindBy(id = "email")
 	public WebElement registerScreenEmailTextbox;
 
 
 	@iOSFindBy(id = "firstname")
-	@AndroidFindBy(accessibility = "ppaFormSbtBtn")
+	@AndroidFindBy(id = "ppaFormSbtBtn")
 	public WebElement registerScreenSubmitButton;
 
 	@iOSFindBy(id = "firstname")
@@ -138,11 +141,11 @@ public class DemoPage {
 	public WebElement hamburgerMenuSellingOption;
 
 	@iOSFindBy(id = "sell_something_button")
-	@AndroidFindBy(accessibility = "sell_something_button")
+	@AndroidFindBy(id = "sell_something_button")
 	public WebElement startSellingButton;
 
 	@iOSFindBy(id = "sell_something_button")
-	@AndroidFindBy(accessibility = "groupTitle")
+	@AndroidFindBy(id = "groupTitle")
 	public WebElement sellingScreenHowItWorks;
 
 	@iOSFindBy(id = "sell_something_button")
@@ -162,6 +165,10 @@ public class DemoPage {
 	public void selectCountryAndRegion(AppiumDriver driver,String platform,String expectedCountry) throws Exception
 	{
 		boolean check;
+		TouchAction action = new TouchAction(driver);
+
+		
+		
 
 
 		try {
@@ -221,7 +228,9 @@ public class DemoPage {
 
 				comlib.verifyForCondition(driver, extest, check, "Verify if selected country is reflected as expected", "", 
 						"Expected value was "+expectedCountry+" and forund is "+countryName.getText());
-				navigateBackButton.click();
+				action.tap(TapOptions.tapOptions().withElement(ElementOption.element(navigateBackButton))).perform();
+				action.tap(TapOptions.tapOptions().withElement(ElementOption.element(navigateBackButton))).perform();
+
 			}
 		}catch (Exception e) {
 
@@ -234,6 +243,7 @@ public class DemoPage {
 	public void verifyTrendingDealsScreen(AppiumDriver driver) throws Exception
 	{
 		boolean check;
+
 		String expTitle="Trending deals";
 
 		try {
@@ -323,7 +333,8 @@ public class DemoPage {
 			comlib.validateForElementDisplayed(registerButtonHomeScreen, driver, extest, "verify if Register button is displayed in homescreen", "",
 					"", "Register button is not displayed in homescreen");
 			registerButtonHomeScreen.click();
-			
+			commonReusableMethods.waitForElementToDisappear(driver, progressBar);
+
 			comlib.validateForElementDisplayed(registerScreenFirstNameTextbox, driver, extest, "verify if Register screen first name editbox is displayed", "",
 					"", "Register screen first name editbox is not displayed");
 
@@ -365,7 +376,6 @@ public class DemoPage {
 			comlib.validateForElementDisplayed(sellingScreenCartIcon, driver, extest, "verify if Cart icon displayed in selling screen", "",
 					"", "Cart icon not displayed in selling screen");
 			
-			navigateBackButton.click();
 
 		}catch (Exception e) {
 

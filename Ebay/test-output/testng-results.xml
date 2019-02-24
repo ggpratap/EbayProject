@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="57395" started-at="2019-02-13T18:10:14Z" finished-at="2019-02-13T18:11:11Z">
+  <suite name="Suite" duration-ms="170129" started-at="2019-02-24T16:43:23Z" finished-at="2019-02-24T16:46:13Z">
     <groups>
     </groups>
-    <test name="HTC" duration-ms="57395" started-at="2019-02-13T18:10:14Z" finished-at="2019-02-13T18:11:11Z">
+    <test name="HTC" duration-ms="170129" started-at="2019-02-24T16:43:23Z" finished-at="2019-02-24T16:46:13Z">
       <class name="com.ebay.testscripts.DemoTest">
-        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="beforeClass" is-config="true" duration-ms="35482" started-at="2019-02-13T18:10:14Z" finished-at="2019-02-13T18:10:50Z">
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="beforeClass" is-config="true" duration-ms="28925" started-at="2019-02-24T16:43:23Z" finished-at="2019-02-24T16:43:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2bebb74f]]>
+                <![CDATA[org.testng.TestRunner@63c163e1]]>
               </value>
             </param>
             <param index="1">
@@ -58,33 +58,137 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="verifyAppInstalled()[pri:1, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="verifyAppInstalled" duration-ms="20445" started-at="2019-02-13T18:10:50Z" finished-at="2019-02-13T18:11:10Z">
+        <test-method status="PASS" signature="selectCountryAndRegion()[pri:1, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="selectCountryAndRegion" duration-ms="20080" started-at="2019-02-24T16:43:52Z" finished-at="2019-02-24T16:44:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAppInstalled -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-13T18:10:50Z" finished-at="2019-02-13T18:10:50Z">
+        </test-method> <!-- selectCountryAndRegion -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-24T16:43:52Z" finished-at="2019-02-24T16:43:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.ebay.testscripts.DemoTest.verifyAppInstalled() throws java.lang.Exception]]>
+                <![CDATA[public void com.ebay.testscripts.DemoTest.selectCountryAndRegion() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="213" started-at="2019-02-13T18:11:10Z" finished-at="2019-02-13T18:11:10Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="192" started-at="2019-02-24T16:44:12Z" finished-at="2019-02-24T16:44:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAppInstalled on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS method=DemoTest.verifyAppInstalled()[pri:1, instance:[DemoTest passed=0 failed=0 skipped=0]] output={null}]]]>
+                <![CDATA[[TestResult name=selectCountryAndRegion on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS method=DemoTest.selectCountryAndRegion()[pri:1, instance:[DemoTest passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="tearDown" is-config="true" duration-ms="1242" started-at="2019-02-13T18:11:10Z" finished-at="2019-02-13T18:11:11Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-24T16:44:12Z" finished-at="2019-02-24T16:44:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ebay.testscripts.DemoTest.verifyTrendingDealsScreen() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyTrendingDealsScreen()[pri:2, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="verifyTrendingDealsScreen" duration-ms="34560" started-at="2019-02-24T16:44:12Z" finished-at="2019-02-24T16:44:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrendingDealsScreen -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="28" started-at="2019-02-24T16:44:46Z" finished-at="2019-02-24T16:44:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTrendingDealsScreen on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS method=DemoTest.verifyTrendingDealsScreen()[pri:2, instance:[DemoTest passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifySearchCategories()[pri:3, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="verifySearchCategories" duration-ms="17720" started-at="2019-02-24T16:44:46Z" finished-at="2019-02-24T16:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchCategories -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-24T16:44:46Z" finished-at="2019-02-24T16:44:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ebay.testscripts.DemoTest.verifySearchCategories() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="26" started-at="2019-02-24T16:45:04Z" finished-at="2019-02-24T16:45:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchCategories on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS method=DemoTest.verifySearchCategories()[pri:3, instance:[DemoTest passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-24T16:45:04Z" finished-at="2019-02-24T16:45:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ebay.testscripts.DemoTest.verifyRegisterScreenElements() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyRegisterScreenElements()[pri:4, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="verifyRegisterScreenElements" duration-ms="61027" started-at="2019-02-24T16:45:04Z" finished-at="2019-02-24T16:46:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterScreenElements -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="28" started-at="2019-02-24T16:46:05Z" finished-at="2019-02-24T16:46:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegisterScreenElements on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS method=DemoTest.verifyRegisterScreenElements()[pri:4, instance:[DemoTest passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-02-24T16:46:05Z" finished-at="2019-02-24T16:46:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ebay.testscripts.DemoTest.verifySellingScreen() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifySellingScreen()[pri:5, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="verifySellingScreen" duration-ms="6194" started-at="2019-02-24T16:46:05Z" finished-at="2019-02-24T16:46:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySellingScreen -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="27" started-at="2019-02-24T16:46:11Z" finished-at="2019-02-24T16:46:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySellingScreen on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS method=DemoTest.verifySellingScreen()[pri:5, instance:[DemoTest passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:[DemoTest passed=0 failed=0 skipped=0]]" name="tearDown" is-config="true" duration-ms="1299" started-at="2019-02-24T16:46:11Z" finished-at="2019-02-24T16:46:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

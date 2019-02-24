@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ebay.testscripts.DemoTest" hash-for-method="verifyAppInstalled">verifyAppInstalled</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ebay.testscripts.DemoTest" hash-for-method="selectCountryAndRegion">selectCountryAndRegion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ebay.testscripts.DemoTest" hash-for-method="verifyRegisterScreenElements">verifyRegisterScreenElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ebay.testscripts.DemoTest" hash-for-method="verifySearchCategories">verifySearchCategories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ebay.testscripts.DemoTest" hash-for-method="verifySellingScreen">verifySellingScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.ebay.testscripts.DemoTest" hash-for-method="verifyTrendingDealsScreen">verifyTrendingDealsScreen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +145,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAppInstalled">
-                  </a> <!-- verifyAppInstalled -->
-                  <span class="method-name">verifyAppInstalled</span>
+                  <a name="selectCountryAndRegion">
+                  </a> <!-- selectCountryAndRegion -->
+                  <span class="method-name">selectCountryAndRegion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterScreenElements">
+                  </a> <!-- verifyRegisterScreenElements -->
+                  <span class="method-name">verifyRegisterScreenElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchCategories">
+                  </a> <!-- verifySearchCategories -->
+                  <span class="method-name">verifySearchCategories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySellingScreen">
+                  </a> <!-- verifySellingScreen -->
+                  <span class="method-name">verifySellingScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTrendingDealsScreen">
+                  </a> <!-- verifyTrendingDealsScreen -->
+                  <span class="method-name">verifyTrendingDealsScreen</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +183,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/sgaurav/Desktop/RTAutomation/automation/Travelbook_Automation/Ebay/testng.xml</span>
+            <span class="header-content">/Users/sgaurav/Documents/Ebay/Ebay/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -192,16 +240,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAppInstalled')
+data.setCell(0, 1, 'verifyRegisterScreenElements')
 data.setCell(0, 2, 'com.ebay.testscripts.DemoTest')
-data.setCell(0, 3, 20445);
+data.setCell(0, 3, 61027);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyTrendingDealsScreen')
+data.setCell(1, 2, 'com.ebay.testscripts.DemoTest')
+data.setCell(1, 3, 34560);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'selectCountryAndRegion')
+data.setCell(2, 2, 'com.ebay.testscripts.DemoTest')
+data.setCell(2, 3, 20080);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySearchCategories')
+data.setCell(3, 2, 'com.ebay.testscripts.DemoTest')
+data.setCell(3, 3, 17720);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySellingScreen')
+data.setCell(4, 2, 'com.ebay.testscripts.DemoTest')
+data.setCell(4, 3, 6194);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -229,24 +293,72 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.ebay.testscripts.DemoTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeClass(org.testng.TestRunner@2bebb74f, Lenovo K6 POWER, bb6ea85c, 6.0.1, android, com.ebay.mobile, com.ebay...)</span>
+                <span class="method-name">beforeClass(org.testng.TestRunner@63c163e1, Lenovo K6 POWER, bb6ea85c, 6.0.1, android, com.ebay.mobile, com.ebay...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.ebay.testscripts.DemoTest.verifyAppInstalled() throws java.lang.Exception)</span>
-                <span class="method-start">35490 ms</span>
+                <span class="method-name">beforeMethod(public void com.ebay.testscripts.DemoTest.selectCountryAndRegion() throws java.lang.Exception)</span>
+                <span class="method-start">28934 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyAppInstalled</span>
-                <span class="method-start">35490 ms</span>
+                <span class="method-name">selectCountryAndRegion</span>
+                <span class="method-start">28934 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyAppInstalled on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS method=...)</span>
-                <span class="method-start">55937 ms</span>
+                <span class="method-name">afterMethod([TestResult name=selectCountryAndRegion on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS met...)</span>
+                <span class="method-start">49017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.ebay.testscripts.DemoTest.verifyTrendingDealsScreen() throws java.lang.Exception)</span>
+                <span class="method-start">49210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTrendingDealsScreen</span>
+                <span class="method-start">49210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTrendingDealsScreen on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS ...)</span>
+                <span class="method-start">83772 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.ebay.testscripts.DemoTest.verifySearchCategories() throws java.lang.Exception)</span>
+                <span class="method-start">83801 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchCategories</span>
+                <span class="method-start">83801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifySearchCategories on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS met...)</span>
+                <span class="method-start">101522 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.ebay.testscripts.DemoTest.verifyRegisterScreenElements() throws java.lang.Exception)</span>
+                <span class="method-start">101548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterScreenElements</span>
+                <span class="method-start">101549 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyRegisterScreenElements on [DemoTest passed=0 failed=0 skipped=0] status=SUCCE...)</span>
+                <span class="method-start">162577 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.ebay.testscripts.DemoTest.verifySellingScreen() throws java.lang.Exception)</span>
+                <span class="method-start">162605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySellingScreen</span>
+                <span class="method-start">162606 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifySellingScreen on [DemoTest passed=0 failed=0 skipped=0] status=SUCCESS method...)</span>
+                <span class="method-start">168801 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">56151 ms</span>
+                <span class="method-start">168828 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

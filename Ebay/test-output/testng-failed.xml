@@ -14,9 +14,13 @@
       <class name="com.ebay.testscripts.DemoTest">
         <methods>
           <include name="beforeMethod"/>
+          <include name="verifySearchCategories"/>
+          <include name="selectCountryAndRegion"/>
+          <include name="verifyTrendingDealsScreen"/>
           <include name="beforeClass"/>
+          <include name="verifySellingScreen"/>
+          <include name="verifyRegisterScreenElements"/>
           <include name="afterMethod"/>
-          <include name="verifyAppInstalled"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.ebay.testscripts.DemoTest -->
